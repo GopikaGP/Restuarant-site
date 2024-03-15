@@ -1,0 +1,860 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    font-size: 40px;
+    letter-spacing:3px;
+}
+.header_main{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    
+}
+.navbar{
+    width: 95%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   
+    
+
+}
+.head_caption h1{
+    font-size: 20px;
+}
+h1{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-size: 19px;
+    font-family: "Shantell Sans",cursive;
+    font-optical-sizing:auto;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+}
+.head_caption{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.navbar img{
+    width: 120px;
+}
+.navbar h1{
+    color:#d2e2d8;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-right: 166px;
+}
+.navbar span{
+    color: #50C878;
+}
+.navbar p{
+    color: white;
+    font-family: "Dancing Script",cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+
+}
+.menu{
+    display: flex;
+    gap: 30px;
+   
+}
+.menu li{
+    list-style: none;
+    
+    
+}
+.item{
+    text-decoration: none;
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    /* width: max-content; */
+    
+    position: relative;
+    cursor: pointer;
+}
+.item::after{
+   content: "";
+   position:absolute;
+   bottom:-5px;
+   height:3px ;
+   width: 100%;
+   left:0;
+   background-color:#50C878;
+   transition:0.3s;    /* for smooth flow */
+   transition-timing-function:ease-in-out;
+   transform:scaleX(0);
+   
+
+   
+}
+.item:hover::after{
+    transform: scaleX(1);
+}
+/* .content_main h1{
+    position: absolute;
+    top: 0;
+    color: wheat;
+   
+} */
+
+.cup img{
+    position: absolute;
+    right: -30px;
+    bottom: 20px;
+
+
+}
+.vapour{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    padding: 0 200px;
+    bottom: 200px;
+    right: 50px;
+    
+
+}
+.vapour span{
+    position: relative;
+    bottom: 0px;
+    display: block;
+    margin: 0 2px 50px;
+    height: 120px;
+    min-width: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(8px);
+    animation-delay:calc((var(--i)*-0.5s)) ;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%{
+      
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-150px) scaleX(5);
+      
+    }
+    95%{
+       
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-300) scaleX(10);
+       
+    }
+}
+.content_left_home{
+    color: white;
+    position: absolute;
+    bottom: 200px;
+    left: 120px;
+    line-height: 50px;
+    
+}
+.content_left_home h1{
+    color: #C4CBCA;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 6px;
+}
+.content_left_home span{
+    color:#50C878;
+}
+.content_left_home p{
+    font-size: 19px;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+  
+}
+.content_left_home button{
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    color: #32bf61;
+    font-size: larger;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #50C878;
+   
+}
+.content_left_home button:hover{
+    background-color: #298949;
+    transition: 0.5s;
+    color: white;
+  
+}
+
+/* section 2 */
+
+#menu{
+    margin-top: 6%;
+    position: relative;
+   padding-left: 200px;
+   padding-right: 200px;
+
+}
+.menu_heading h1{
+    color: #2e1114;
+    text-align: center;
+  
+    letter-spacing:3px;
+    padding-bottom: 17px;
+}
+.circle span{
+    color: #2e1114;
+     font-size: 16px;
+     font-family: "Protest Riot", sans-serif;
+     padding-left: 47px;
+    
+}
+.menu_heading p{
+    text-align: justify;
+    line-height: 32px;
+    padding-top: 10px;
+}
+.menu_heading img{
+    position: absolute;
+    top: -60px;
+    right:20%;
+    /* animation:zoom  5s linear infinite; */
+}
+@keyframes zoom{
+    0%{
+       transform: scale(0.5);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius:100px;
+    transition: 1s;
+    /* box-shadow: 0 0 20px 2px rgb(0, 0, 0, .1); */
+}
+.circle img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 37px;
+ 
+}
+.circle:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.category{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
+}
+.special_coffee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* padding-left: 10px; */
+}
+.special_coffee h3{
+    text-align: center;
+    font-family: "Protest Riot", sans-serif;
+
+}
+
+
+
+/* #span3{
+  padding-left: 45px;  
+}
+#span1{
+    padding-left: 30px;
+}
+#span2{
+    padding-left: 34px;
+} */
+.card1{
+    width: 400px;
+}
+#special_coffeee_heading{
+    padding-top: 10%;
+    text-align: center;
+}
+.special-coffe-card{
+    padding-top: 5%;
+}
+.special-coffe-card img
+{
+    width: 300px;
+    height: 200px;
+}
+.circle:hover{
+    opacity: 1;
+    box-shadow: -8px 8px   5px#50C878;
+}
+.card{
+  width: 250px;
+  box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, .1);
+  padding: 15px;
+  border-radius: 8px;
+  /* transition: 1s; */
+  height: 330px;
+   
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+    transition: 1s;
+    height: 200px;
+    padding-bottom: 20psx;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card:hover{
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, .1);
+}
+.grid_card{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+   column-gap: 24px;
+   row-gap: 70px;
+   padding-top: 5%;
+   justify-content: center;
+}
+
+.card h3{
+    padding-top: 20px;
+    text-align: center;
+}
+.card-body{
+    padding-top: 10px;
+}
+.card-body button{
+    width: 100px;
+    background-color: #50C878;
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    height: 30px;
+    border: 1px solid #50C878;
+    border-radius: 3px;
+    transition: 1s;
+    
+}
+.card-body button:hover{
+    background-color: #1e753b;
+    transform: scale(1.1);
+}
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+.price{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+.price span{
+  
+    font-size: 13px;
+   
+    text-decoration-line: line-through;
+    padding-top: 5px;
+    color:#32bf61;
+}
+#main_price{
+     font-family: "Josefin Sans", sans-serif; 
+     font-size: 15px;
+}
+#star{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+#hot_coffeee_heading{
+    text-align: center;
+    padding-top: 7%;
+}
+.banner{
+    position: relative;
+    background-image:url('https://assets.architecturaldigest.in/photos/600848e71dd783c692024df8/master/w_1600%2Cc_limit/Pune-Secret-Garden-Koregaon-Park-7.jpg');
+    width: 100%;
+    height:80vh;
+    background-position-y: bottom;
+    margin-top: 6%;
+    transition: 5s;
+    animation-name: bannerimg;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes bannerimg{
+    0%{
+        background-image: url('https://image.slidesdocs.com/responsive-images/background/mockup-banner-and-menu-showcase-in-3d-illustration-of-coffee-shop-lounge-architecture-design-powerpoint-background_5aed73f39d__960_540.jpg');
+    }
+    10%{
+        background-image: url('https://as2.ftcdn.net/v2/jpg/05/58/82/83/1000_F_558828328_Uhd1O0Qo77cZ9gjaWBaasoZ8qHBuKRNt.jpg');
+    }
+    20%{
+        background-image: url('https://thumbs.dreamstime.com/b/fast-food-restaurant-view-busy-city-center-featuring-modern-sleek-interior-design-fast-food-restaurant-274115993.jpg');
+    }
+    30%{
+        background-image: url('https://png.pngtree.com/background/20231016/original/pngtree-sleek-and-contemporary-coffee-shop-seating-area-with-3d-tablet-mockup-picture-image_5583152.jpg');
+    }
+    40%{
+        background-image: url('https://i.pinimg.com/736x/07/af/6a/07af6af71d70f851c8695493fd05aae1.jpg');
+    }
+    50%{
+        background-image: url('https://images.creativemarket.com/0.1.0/ps/33582813/580/387/m1/fpnw/wm0/frame-1285-.jpg?1&s=2f46a7071724d75414ccb6026a00c30f');
+    }
+    60%{
+        background-image: url('https://i.pinimg.com/736x/67/32/85/673285d26ddf666d693eb8c8e1e88f8f.jpg');
+    }
+}
+.bg{
+    width: 100%;
+    font-family: "Protest Riot", sans-serif;
+    background-color: rgba(0, 0, 0, 0.537);
+    color: white;
+    height: 80vh;
+   text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 40px;
+}
+.banner  button{
+    width: 150px;
+    background-color: #50C878;
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    height: 50px;
+    border: 1px solid #50C878;
+    border-radius: 3px;
+    transition: 1s;
+    margin-top: 13px;
+    
+}
+.banner button:hover{
+    
+    background-color: #1e753b;
+    transform: scale(1.1);
+}
+
+
+.offers li p{
+   list-style: none;
+
+   font-family: "Protest Riot", sans-serif;
+   color: #d2e2d8;
+  
+}
+.offers li{
+    list-style: none;
+    font-size: 16px;
+    font-family: "Protest Riot", sans-serif;
+    color: #d2e2d8;
+   
+ }
+#discound{
+    color: #32bf61;
+}
+#discounds{
+    font-size: 30px;
+    color: #32bf61;
+    font-weight: 800;
+
+}
+.banner-sale{
+    background-image:url('https://previews.123rf.com/images/avgust01/avgust011803/avgust01180300027/96971769-hello-summer-banner-template-top-view-on-summer-composition-with-realistic-objects-and-tropical.jpg') ;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 6%;
+   
+  
+}
+
+.bg-sale{
+    width: 100%;
+    font-family: "Protest Riot", sans-serif;
+    background-color: rgba(0, 0, 0, 0.557);
+    color: white;
+    height: 70vh;
+  
+    
+}
+.main-sale{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.right-sale{
+    padding-left: 10%;
+    line-height: 40px;
+    
+}
+.right-sale h1{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 30px;
+}
+.right-sale button{
+    width: 120px;
+
+    height: 40px;
+    color: white;
+    background-color: #32bf61;
+    border-color: #32bf61;
+    border-radius: 6px;
+    transition: 1s;
+}
+.right-sale button:hover{
+    background-color: #298949;
+    transform: scale(1.1);
+}
+.left img{
+    transition: .5s;
+    height: 60vh;
+    padding-top: 58px;
+}
+.left img:hover{
+    transform: scale(1.2);
+}
+.main-aboutus{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+#aboutus h1{
+    text-align: center;
+}
+#abt-sub{
+    text-align: center;
+}
+#aboutus{
+    margin-top: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-image:url('https://t4.ftcdn.net/jpg/03/35/81/83/360_F_335818328_KTIKA9I4NRvU3MKF452QYgGLzQ4GKmCU.jpg');
+    height: 70vh;
+    width: 100%;
+    background-size:cover;
+    position: relative;
+    
+}
+.left-content-aboutus p{
+    color: #2e1114;
+    font-size: 17px;
+    text-align: start;
+   
+
+}
+.right-content-aboutus{
+    width: 50%;
+}
+.left-content-aboutus{
+   
+    color: #32bf61;
+    
+}
+.left-content-aboutus h1{
+   text-align: start;
+    color: #32bf61;
+    
+}
+/* special cofeee */
+#special-coffe{
+    /* background-image:url('https://i.pinimg.com/originals/70/c5/35/70c535d04f8d18e221f76cf1e4f6c008.jpg'); */
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+    position: relative;
+    
+}
+#contactus{
+    background-image:url('https://t4.ftcdn.net/jpg/03/35/81/83/360_F_335818328_KTIKA9I4NRvU3MKF452QYgGLzQ4GKmCU.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+    position: relative;
+    margin-top: 5%;
+    /* background-position: bottom; */
+}
+.contact-bg{
+    width: 100%;
+    font-family: "Protest Riot", sans-serif;
+    background-color:rgba(255, 255, 255, 0.929);
+   
+    height: 100vh;
+   /* text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.abt-bg{
+    width: 100%;
+    font-family: "Protest Riot", sans-serif;
+    background-color:rgba(255, 255, 255, 0.929);
+    height: 100vh;
+   
+}
+.contact-bg h1{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 30px;
+   
+}
+.contact-top{
+    padding-top: 60px;
+  
+   justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 60px;
+}
+#top-haed-contact{
+    color:#32bf61;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.detail-call{
+    color: rgba(0, 0, 0, 0.527);
+}
+.map-btn{
+   
+    border: 1px solid #32bf61;
+    padding:10px;
+    color: #32bf61;
+    font-size: 13px;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 1s;
+   
+    
+
+
+}
+.map-btn:hover{
+    background-color: #32bf61;
+    color: white;
+    transform: scale(1.1);
+}
+.contact-address, .opening-time, .contact-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.vl {
+    border-left: 1px solid rgba(0, 0, 0, 0.393);
+    height: 150px;
+  }
+  .contact-form-grid{
+    width: 60%;
+    /* border: 1px solid rgba(0, 0, 0, 0.215); */
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 4%;
+   border-radius: 20px;
+    margin-left:20%;
+    margin-right:20%;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .form-section-contact{
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+    width: 400px;
+    height: 60vh;
+    background-position: center;
+
+  }
+  .bg-form-contact{
+    background-color:rgba(15, 1, 1, 0.395);
+    width: 400px;
+    height:  60vh;;
+   
+    
+    
+  }
+  input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-bottom-width: 2px;
+  }
+ 
+  .input-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+  }
+  label{
+    color: white;
+  }
+  .main-input-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 60px;
+    
+  }
+  .form-head{
+    text-align: center;
+    padding-top: 30px;
+  }
+  .form-btn{
+    height: 30px;
+     width: 180px;
+   border: 2px solid white;
+   background-color: transparent;
+   color: white;
+   transition: 1s;
+  }
+  input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    border-bottom-width: 2px;
+    
+  }
+  .form-btn:hover{
+    background-color: #32bf61;
+    color: white;
+    border: 1px solid #32bf61;
+    transform: scale(1.1);
+  }
+  footer{
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/58/97/14/1000_F_358971421_KYzO8MIV2Da3CdfouvDDEtWk8rBXg3wq.jpg');
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .footer-bg{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.687);
+  }
+  .social-media{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    
+  }
+  .social-media a i{
+    font-size: 30px;
+    transition: 1s;
+  }
+  .item-footer{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+   
+    padding-top: 30px;
+  }
+  .item-footer a{
+    text-decoration: none;
+    color: white;
+   
+  }
+  .copyright p{
+    color: white;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    font-size: 12px;
+  
+   
+  }
+  .item-footer:hover i{
+    color: #32bf61;
+    background-color: #32bf61;
+    transform: scale(1.1);
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+   
+
+
+
+
