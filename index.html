@@ -1,489 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&family=Satisfy&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <!-- header -->
-      <header class="header_main">
-        <nav class="navbar">
-          <div>
-            <img src="./images/icon.png" alt="" />
-            <div class="head_caption">
-              <h1>Cafe <span>o</span>' Clock</h1>
 
-              <p>
-                "Life is brew-<span class="tea">tea</span>-ful with a cup of
-                <span class="tea">tea</span>."
-              </p>
-            </div>
-          </div>
-          <ul class="menu">
-            <li><a class="item" href="">Home</a></li>
-           
-            <li><a class="item" href="#menu">Menu</a></li>
-            <li><a class="item" href="">Location</a></li>
-            <li><a class="item" href="#contactus">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="content_main">
-          <div class="content_left_home">
-                    
-                   <h1> Welcome to <span>Cafe o'Clock </span></h1>
-                   <p>Life truly begins after the first glorious sip.....</p>
-                   <p> Where Every Sip is an Adventure!</p>
-                   <button>Take a Sip</button>
-          </div>
-   
-          
-             <div class="vapour">
-               <span style="--i: 1"></span>
-               <span style="--i: 3"></span>
-               <span style="--i: 16"></span>
-               <span style="--i: 5"></span>
-               <span style="--i: 13"></span>
-               <span style="--i: 20"></span>
-               <span style="--i: 6"></span>
-               <span style="--i: 7"></span>
-               <span style="--i: 10"></span>
-               <span style="--i: 8"></span>
-               <span style="--i: 17"></span>
-               <span style="--i: 11"></span>
-               <span style="--i: 12"></span>
-               <span style="--i: 14"></span>
-               <span style="--i: 2"></span>
-               <span style="--i: 9"></span>
-               <span style="--i: 15"></span>
-               <span style="--i: 4"></span>
-               <span style="--i: 18"></span>
-               <span style="--i: 19"></span>
-             </div>
-             <div class="cup">
-               <img
-                 src="./images/cup3-removebg-preview.png"
-                 alt=""
-                 width="50%"
-               />
-             </div>
-          
-         </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe O Clock</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&family=Satisfy&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
 
-      <!-- about us -->
-      <!-- <section id="aboutus">
-       <div class="abt-bg">
-       <div class="main-aboutus">
-          <div class="left-content-aboutus">
-            <h1>About Us</h1>
-            <p id="abt-sub">
-             
-              
-              Welcome to<span id="discound"> Cafe O' clock</span>, where every cup tells a story.</p>
-             <p>We're not just a coffee shop; we're a community. Since 2017, we've been crafting exceptional coffee experiences. Our passion for quality beans, expertly brewed, is matched only by our commitment to creating moments of joy and connection.</p>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="header_main">
+      <nav class="navbar">
+        <div>
+          <img src="./images/icon.png" alt="" />
+          <div class="head_caption">
+            <h1>Cafe <span>o</span>' Clock</h1>
 
-           <p> Join us for your favorite cup, and let's make memories together.</p>
-              <br>
-             <p>
-                Cheers,<br><br>
-              <span id="discound">  The Cafe O' clock Team</span>
-             </p>
+            <p>
+              "Life is brew-<span class="tea">tea</span>-ful with a cup of
+              <span class="tea">tea</span>."
+            </p>
           </div>
-          <div class="right-content-aboutus">
-            <img src="https://perfectdailygrind.com/wp-content/uploads/2022/01/donut-coffee-1024x640.jpg" alt="" height="60%">
-          </div>
-       </div>
+        </div>
+        <ul class="menu">
+          <li><a class="item" href="">Home</a></li>
+          <li><a class="item" href="#menu">Menu</a></li>
+          <li><a class="item" href="https://www.google.com/maps/@10.008026,76.3289828,15z?entry=ttu">Location</a></li>
+          <li><a class="item" href="#contactus">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="content_main">
+        <div class="content_left_home">
+
+          <h1> Welcome to <span>Cafe o'Clock </span></h1>
+          <p>Life truly begins after the first glorious sip.....</p>
+          <p> Where Every Sip is an Adventure!</p>
+          <button>Take a Sip</button>
+        </div>
+
+
+        <div class="vapour">
+          <span style="--i: 1"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 8"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 19"></span>
+        </div>
+        <div class="cup">
+          <img src="./images/cup3-removebg-preview.png" alt="" width="50%" />
+        </div>
+
       </div>
-      </section>
-      -->
-      
-      <!--  section -->
-      <section id="menu">
-       <div class="menu_heading ">
+    </header>
+
+
+
+    <!--  section -->
+    <section id="menu">
+      <div class="menu_heading ">
         <h1>Discover the Perfect <span>Cup</span></h1>
-        
+
         <img src="./images/greenbeans.png" alt="" width="15%">
-       </div>
-       <div class="category">
+      </div>
+      <div class="category">
         <div class="special_coffee">
-         
+
           <div class="circle">
-            <img src="./images/coffeemenu.png" alt="" >
+            <img src="./images/coffeemenu.png" alt="">
             <span id="span1">Specialty Coffee:</span>
           </div>
         </div>
         <!-- hot -->
         <div class="special_coffee">
-         
+
           <div class="circle">
-            <img src="./images/hotcoffee-removebg-preview.png" alt="" >
+            <img src="./images/hotcoffee-removebg-preview.png" alt="">
             <span id="span1">Hot Coffee:</span>
           </div>
         </div>
         <!-- cold -->
         <div class="special_coffee">
-        
+
           <div class="circle">
-            <img src="https://as1.ftcdn.net/v2/jpg/06/44/38/68/1000_F_644386899_k7niPtACQVwFXlo2qjjzHX01iFPkYlU9.webp" alt="" >
+            <img src="https://as1.ftcdn.net/v2/jpg/06/44/38/68/1000_F_644386899_k7niPtACQVwFXlo2qjjzHX01iFPkYlU9.webp"
+              alt="">
             <span id="span2">Cold Bevarages</span>
           </div>
         </div>
         <!-- sweet -->
         <div class="special_coffee">
-        
+
           <div class="circle">
-            <img src="./images/banner-cake-removebg-preview.png" alt="" >
+            <img src="./images/banner-cake-removebg-preview.png" alt="">
             <span id="span3">Sweet treats</span>
 
           </div>
         </div>
-       </div>
-      </section>
+      </div>
+    </section>
 
-       <!-- special coffes -card-->
-      <section id="special-coffe">
-         <h1 id="special_coffeee_heading">Specialty <span>Coffee</span></h1>
-        
-        
-          <div class="grid_card">
-            <div class="card">
-             <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/4c8ae84d7b0e458a25e4b700e68bc1b3" alt="" width="300px">
-               <div class="card-heading"><h3>Turkish Coffee</h3></div>
-              <div class="card-body">
-               <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-               <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span>
-              </div>
-               <button>Add Item</button>
-              </div>
-             </div>
-             <!--  -->
-             <div class="card">
-              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0c685119085657406f83377693bc1a70" alt="" width="300px">
-                <div class="card-heading"><h3>Affogato</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add Item</button>
-               </div>
-              </div>
-              <!--  -->
-             
-              <!--  -->
-             <div class="card">
-              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/t1y1xge6ptjng67h4a90" alt="" width="300px">
-                <div class="card-heading"><h3>Irish Coffee</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add Item</button>
-               </div>
-              </div>
-              <!--  -->
-             <div class="card">
-              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/tlpb9ziw80lrdeqpuqs5" alt="" width="300px">
-                <div class="card-heading"><h3>Vietnamese Iced Coffee</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add  Item</button>
-               </div>
-              </div>
-              <!--  -->
-          </div>
-      </section>
+    <!-- special coffes -card-->
+    <section id="special-coffe">
+      <h1 id="special_coffeee_heading">Specialty <span>Coffee</span></h1>
 
-      <section id="hot-coffe">
-          <h1 id="hot_coffeee_heading">Hot <span>Coffee</span></h1>
-        
-        
-          <div class="grid_card">
-            <div class="card">
-             <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc298ZW58MHx8MHx8fDA%3D" alt="" width="300px">
-               <div class="card-heading"><h3>Espresso</h3></div>
-              <div class="card-body">
-               <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-               <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span>
-              </div>
-               <button>Add Item</button>
-              </div>
-             </div>
-             <!--  -->
-             <div class="card">
-              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8MA%3D%3D" alt="" width="300px">
-                <div class="card-heading"><h3>Cappuccino</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add Item</button>
-               </div>
-              </div>
-              <!--  -->
-             
-              <!--  -->
-             <div class="card">
-              <img src="https://images.unsplash.com/44/fN6hZMWqRHuFET5YoApH_StBalmainCoffee.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="300px">
-                <div class="card-heading"><h3>Mocha</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add Item</button>
-               </div>
-              </div>
-              <!--  -->
-             <div class="card">
-              <img src="https://media.istockphoto.com/id/1256257189/photo/cafe-latte-macchiato-layered-coffee.jpg?s=612x612&w=0&k=20&c=qxt-VvvIZ65X8FAM11MUjldxesV3j-WgdJ91kZkx48Y=" alt="" width="300px">
-                <div class="card-heading"><h3>Macchiato</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add  Item</button>
-               </div>
-              </div>
-  
-              <!--  -->
-  
-              <div class="card">
-                <img src="https://media.istockphoto.com/id/891706644/photo/sunday-morning-flat-white.jpg?s=612x612&w=0&k=20&c=elfwuCQzZlESlGG2GMikklHbb0ynvzTh4cHgm7D4k7Y=" alt="" width="300px">
-                  <div class="card-heading"><h3>Flat White</h3></div>
-                 <div class="card-body">
-                  <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                  <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                  <button>Add Item</button>
-                 </div>
-                </div>
-                <!--  -->
-                <div class="card">
-                  <img src="https://media.istockphoto.com/id/1278943799/photo/black-coffee-with-cream-poured-over.jpg?s=612x612&w=0&k=20&c=ttPU4JkC7G2cUoBcSC5Ns97Y6LGx_NFZcGuy4hfoTfI=" alt="" width="300px">
-                    <div class="card-heading"><h3>Americano</h3></div>
-                   <div class="card-body">
-                    <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                    <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                    <button>Add Item</button>
-                   </div>
-                  </div>
+
+      <div class="grid_card">
+        <div class="card">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/4c8ae84d7b0e458a25e4b700e68bc1b3"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Turkish Coffee</h3>
           </div>
-      </section>
-       
-      
-      
-     
-      <!-- banner section -->
-      <section class="banner">
-       <div class="bg">
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0c685119085657406f83377693bc1a70"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Affogato</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/t1y1xge6ptjng67h4a90"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Irish Coffee</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/tlpb9ziw80lrdeqpuqs5"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Vietnamese Iced Coffee</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <section id="hot-coffe">
+      <h1 id="hot_coffeee_heading">Hot <span>Coffee</span></h1>
+
+
+      <div class="grid_card">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc298ZW58MHx8MHx8fDA%3D"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Espresso</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Cappuccino</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/44/fN6hZMWqRHuFET5YoApH_StBalmainCoffee.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Mocha</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://media.istockphoto.com/id/1256257189/photo/cafe-latte-macchiato-layered-coffee.jpg?s=612x612&w=0&k=20&c=qxt-VvvIZ65X8FAM11MUjldxesV3j-WgdJ91kZkx48Y="
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Macchiato</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <img
+            src="https://media.istockphoto.com/id/891706644/photo/sunday-morning-flat-white.jpg?s=612x612&w=0&k=20&c=elfwuCQzZlESlGG2GMikklHbb0ynvzTh4cHgm7D4k7Y="
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Flat White</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://media.istockphoto.com/id/1278943799/photo/black-coffee-with-cream-poured-over.jpg?s=612x612&w=0&k=20&c=ttPU4JkC7G2cUoBcSC5Ns97Y6LGx_NFZcGuy4hfoTfI="
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Americano</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- banner section -->
+    <section class="banner">
+      <div class="bg">
         <h1>
-        
+
           <h1>"Book Your Birthday Party and Save <span id="discound">30%!"</span></h1>
           <p>Celebrate your special day with us!
-            Indulge in delicious treats and memorable moments at  cafe <span id="discounds">O'</span> clock! 🍰</p>
-            <ul class="offers">
-              <!-- <li><p>🎁 Exclusive Birthday Offers:</p></li> -->
-              <li><p>Complimentary dessert with your meal! </p></li>
-              <li> <p> Personalized birthday decorations for your table!</p> </li>
-        
-          <li><p>Special discounts for group bookings!</p></li>
-            </ul>
-           
-          
-        
+            Indulge in delicious treats and memorable moments at cafe <span id="discounds">O'</span> clock! 🍰</p>
+          <ul class="offers">
+            <!-- <li><p>🎁 Exclusive Birthday Offers:</p></li> -->
+            <li>
+              <p>Complimentary dessert with your meal! </p>
+            </li>
+            <li>
+              <p> Personalized birthday decorations for your table!</p>
+            </li>
+
+            <li>
+              <p>Special discounts for group bookings!</p>
+            </li>
+          </ul>
+
+
+
           <button>Book Now</button>
-       </div>
-     
-      </section>
+      </div>
+
+    </section>
 
     <section id="chill-menu">
       <h1 id="hot_coffeee_heading">Cold <span>Coffee</span></h1>
-      
-      
-        <div class="grid_card">
-          <div class="card">
-           <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="300px">
-             <div class="card-heading"><h3>Iced Latte</h3></div>
-            <div class="card-body">
-             <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-             <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span>
-            </div>
-             <button>Add Item</button>
-            </div>
-           </div>
-           <!--  -->
-           <div class="card">
-            <img src="https://images.unsplash.com/photo-1625242662341-5e92c5101338?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="300px">
-              <div class="card-heading"><h3>Iced Americano</h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add Item</button>
-             </div>
-            </div>
-            <!--  -->
-           
-            <!--  -->
-           <div class="card">
-            <img src="https://us.123rf.com/450wm/alfazetchronicles/alfazetchronicles2401/alfazetchronicles240106640/223181093-glass-of-cold-brew-coffee-with-chocolate-syrup-drizzle.jpg?ver=6" alt="" width="300px">
-              <div class="card-heading"><h3>Cold Brew</h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add Item</button>
-             </div>
-            </div>
-            <!--  -->
-           <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2017/07/27/17/19/ice-coffee-2546041_640.jpg" alt="" width="300px">
-              <div class="card-heading"><h3>Frappuccino</h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add  Item</button>
-             </div>
-            </div>
 
-            <!--  -->
 
-            <div class="card">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPBOSmOLhB05SJwyqTaK0MvcpuO-Q45xlgrkx-tf-7ASsB9E-AUw9FOri1tZi9O-H7QI&usqp=CAU" alt="" width="300px">
-                <div class="card-heading"><h3>Flat White</h3></div>
-               <div class="card-body">
-                <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                <button>Add Item</button>
-               </div>
-              </div>
-              <!--  -->
-              <div class="card">
-                <img src="https://static.onecms.io/wp-content/uploads/sites/19/2018/02/13/field-image-drambuie-swing-swizzle-2000.jpg" alt="" width="300px">
-                  <div class="card-heading"><h3>Americano</h3></div>
-                 <div class="card-body">
-                  <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-                  <div class="price"><p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-                  <button>Add Item</button>
-                 </div>
-                </div>
+      <div class="grid_card">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Iced Latte</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
         </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1625242662341-5e92c5101338?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Iced Americano</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://us.123rf.com/450wm/alfazetchronicles/alfazetchronicles2401/alfazetchronicles240106640/223181093-glass-of-cold-brew-coffee-with-chocolate-syrup-drizzle.jpg?ver=6"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Cold Brew</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2017/07/27/17/19/ice-coffee-2546041_640.jpg" alt="" width="300px">
+          <div class="card-heading">
+            <h3>Frappuccino</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPBOSmOLhB05SJwyqTaK0MvcpuO-Q45xlgrkx-tf-7ASsB9E-AUw9FOri1tZi9O-H7QI&usqp=CAU"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Flat White</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://static.onecms.io/wp-content/uploads/sites/19/2018/02/13/field-image-drambuie-swing-swizzle-2000.jpg"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Americano</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹199.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- banner 50% sale -->
     <section class="banner-sale">
       <div class="bg-sale">
-     
+
         <!-- <img src="./images/sale-removebg-preview.png" alt="" width="300px"> -->
         <div class="main-sale">
           <div class="right-sale">
-            <h1>Cold Coffee <span id="discound">Summer </span> Sale  <span id="discound">50% Off!</span></h1>
+            <h1>Cold Coffee <span id="discound">Summer </span> Sale <span id="discound">50% Off!</span></h1>
             <p>Chill out with our 50% off cold coffees! Limited time only. Shop now!"</p>
-            <button>Shop Now</button>
+           <a href="#chill-menu"> <button>Shop Now</button></a>
           </div>
           <div class="left">
-            <img  src="./images/bannercoffee-removebg-preview.png" alt="">
+            <img src="./images/bannercoffee-removebg-preview.png" alt="">
           </div>
         </div>
 
-         
-          
-         
-       
-        
+
+
+
+
+
       </div>
-    
-     </section>
 
-     <!-- sweet treats -->
+    </section>
 
-     <section id="chill-menu">
+    <!-- sweet treats -->
+
+    <section id="chill-menu">
       <h1 id="hot_coffeee_heading">Sweet<span>Treats</span></h1>
-      
-      
-        <div class="grid_card">
-          <div class="card">
-           <img src="https://c4.wallpaperflare.com/wallpaper/503/768/942/food-chocolate-cake-cake-wallpaper-preview.jpg" alt="" width="300px">
-             <div class="card-heading"><h3>Red Velvet</h3></div>
-            <div class="card-body">
-             <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-             <div class="price"><p id="main_price">₹299.00</p> <span>₹249.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span>
-            </div>
-             <button>Add Item</button>
-            </div>
-           </div>
-           <!--  -->
-           <div class="card">
-            <img src="https://c4.wallpaperflare.com/wallpaper/125/969/289/cherry-cake-nuts-cream-wallpaper-preview.jpg" alt="" width="300px">
-              <div class="card-heading"><h3> Blueberry</h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹399.00</p> <span>₹429.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add Item</button>
-             </div>
-            </div>
-            <!--  -->
-           
-            <!--  -->
-           <div class="card">
-            <img src="https://www.melangers.com/cdn/shop/articles/pastry_1920x.png?v=1656678212" alt="" width="300px">
-            
-            <div class="card-heading"><h3>Cinnamon Streusel</h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹200.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add Item</button>
-             </div>
-            </div>
-            <!--  -->
-           <div class="card">
-            <img src="https://img.freepik.com/premium-photo/sandwich-mockup-hd-8k-wallpaper-stock-photographic-image_915071-45181.jpg" alt="" width="300px">
-              <div class="card-heading"><h3>Danish Pastries </h3></div>
-             <div class="card-body">
-              <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
-              <div class="price"><p id="main_price">₹499.00</p> <span>₹629.00</span><span id="star"><i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>4.2</span></div>
-              <button>Add  Item</button>
-             </div>
-            </div>
 
-            <!--  -->
 
-            
+      <div class="grid_card">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/503/768/942/food-chocolate-cake-cake-wallpaper-preview.jpg"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Red Velvet</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹299.00</p> <span>₹249.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
         </div>
+        <!--  -->
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/125/969/289/cherry-cake-nuts-cream-wallpaper-preview.jpg"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3> Blueberry</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹399.00</p> <span>₹429.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="card">
+          <img src="https://www.melangers.com/cdn/shop/articles/pastry_1920x.png?v=1656678212" alt="" width="300px">
+
+          <div class="card-heading">
+            <h3>Cinnamon Streusel</h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹200.00</p> <span>₹229.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <img
+            src="https://img.freepik.com/premium-photo/sandwich-mockup-hd-8k-wallpaper-stock-photographic-image_915071-45181.jpg"
+            alt="" width="300px">
+          <div class="card-heading">
+            <h3>Danish Pastries </h3>
+          </div>
+          <div class="card-body">
+            <!-- <span>A strong shot of Italian styled espresso, evened out with steamed and foamed</span> -->
+            <div class="price">
+              <p id="main_price">₹499.00</p> <span>₹629.00</span><span id="star"><i class="fa-solid fa-star fa-2xs"
+                  style="color: #FFD43B;"></i>4.2</span>
+            </div>
+            <button>Add Item</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+
+      </div>
     </section>
 
     <!-- contact us -->
 
     <section id="contactus">
-      
 
-       <div class="contact-bg">
+
+      <div class="contact-bg">
         <h1>Get In Touch</h1>
         <div class="contact-top">
           <div class="contact-detail">
-               <p id="top-haed-contact">Contact Details</p>
-              
-                <p class="detail-call"><i class="fa-solid fa-phone fa-shake" style="color: #511f1f;"></i></i>    +411234567890</p>
-                <p  class="detail-call"><i class="fa-regular fa-envelope fa-flip" style="color:#511f1f;"></i>   info@example.com</p>
-                
-              
-                 
+            <p id="top-haed-contact">Contact Details</p>
+
+            <p class="detail-call"><i class="fa-solid fa-phone fa-shake" style="color: #511f1f;"></i></i> +411234567890
+            </p>
+            <p class="detail-call"><i class="fa-regular fa-envelope fa-flip" style="color:#511f1f;"></i>
+              info@example.com</p>
+
+
+
           </div>
           <div class="vl"></div>
           <div class="contact-address">
-             <p id="top-haed-contact">Get Direction</p>
-             
-             <p class="detail-call">Cafe O' clock</p>
-             <p class="detail-call">cecilia chapman 711-2880 nulla st.</p>
-             <p class="detail-call">mankato mississppi</p>
-            <a href="https://www.google.com/maps/@10.008026,76.3289828,15z?entry=ttu" target="_blank" class="map-btn"> View On map</a>
+            <p id="top-haed-contact">Get Direction</p>
+
+            <p class="detail-call">Cafe O' clock</p>
+            <p class="detail-call">cecilia chapman 711-2880 nulla st.</p>
+            <p class="detail-call">mankato mississppi</p>
+            <a href="https://www.google.com/maps/@10.008026,76.3289828,15z?entry=ttu" target="_blank" class="map-btn">
+              View On map</a>
           </div>
           <div class="vl"></div>
           <div class="opening-time">
-             <p id="top-haed-contact">Opening Time</p>
-             <p  class="detail-call">Monday to Sunday:</p>
-             <p class="detail-call">11:30am to 1:30pm</p>
-             <p class="detail-call">6:00pm to 9:30pm</p>
-             
+            <p id="top-haed-contact">Opening Time</p>
+            <p class="detail-call">Monday to Sunday:</p>
+            <p class="detail-call">11:30am to 1:30pm</p>
+            <p class="detail-call">6:00pm to 9:30pm</p>
+
 
 
           </div>
@@ -492,42 +608,43 @@
         <!-- contact  form input -->
         <div class="contact-form-grid">
           <div class="form-section-contact">
-             <div class="bg-form-contact">
-             <div class="form-head">
+            <div class="bg-form-contact">
+              <div class="form-head">
                 <p style="color: white; font-size:25px;">Leave a Message</p>
                 <p style="color: white; font-size:13px"> we are ready to help you</p>
-             </div>
-           <div class="main-input-flex">
-              <div class="input-flex">
-                 <label for="">Name</label>
-                  <input type="text">
-    
               </div>
-              <div class="input-flex">
-                <label for="">Email</label>
-                 <input type="text">
-   
-             </div>
-             <div class="input-flex">
-              <label for="">Number</label>
-               <input type="text">
-  
-           </div>
-           <div class="input-flex">
-            <label for="">Comments</label>
-             <input type="text">
-  
-         </div>
-         <button class="form-btn">Sumbit</button>
-           </div>
-             </div>
+              <div class="main-input-flex">
+                <div class="input-flex">
+                  <label for="">Name</label>
+                  <input type="text">
+
+                </div>
+                <div class="input-flex">
+                  <label for="">Email</label>
+                  <input type="text">
+
+                </div>
+                <div class="input-flex">
+                  <label for="">Number</label>
+                  <input type="text">
+
+                </div>
+                <div class="input-flex">
+                  <label for="">Comments</label>
+                  <input type="text">
+
+                </div>
+                <button class="form-btn">Sumbit</button>
+              </div>
+            </div>
           </div>
           <div class="image-section-contact">
-            <img src="https://thumbs.dreamstime.com/b/coffee-cup-vector-collection-illustration-40689298.jpg" alt="" width="100%">
+            <img src="https://thumbs.dreamstime.com/b/coffee-cup-vector-collection-illustration-40689298.jpg" alt=""
+              width="100%">
           </div>
         </div>
 
-       </div>
+      </div>
     </section>
 
     <!-- footer -->
@@ -537,7 +654,7 @@
         <div>
           <div class="social-media">
             <a href=""><i class="fa-brands fa-facebook" style="color:white;"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"  style="color:white"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" style="color:white"></i></a>
             <a href=""><i class="fa-brands fa-twitter" style="color:white;"></i></a>
             <a href=""><i class="fa-brands fa-whatsapp" style="color:white;"></i></a>
           </div>
@@ -556,6 +673,7 @@
     </footer>
 
 
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

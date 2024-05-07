@@ -107,12 +107,7 @@ p{
 .item:hover::after{
     transform: scaleX(1);
 }
-/* .content_main h1{
-    position: absolute;
-    top: 0;
-    color: wheat;
-   
-} */
+
 
 .cup img{
     position: absolute;
@@ -273,8 +268,8 @@ p{
     border-radius: 50%;
     height: 100%;
     text-align: center;
-    padding-bottom: 37px;
- 
+     padding-bottom: 37px;
+     
 }
 .circle:hover{
     transform: scale(1.1);
@@ -339,7 +334,6 @@ p{
   box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, .1);
   padding: 15px;
   border-radius: 8px;
-  /* transition: 1s; */
   height: 330px;
    
 }
